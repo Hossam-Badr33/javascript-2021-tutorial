@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nested if conditiion</title>
+  </head>
+  <body>
+    <script>
+      let price = 100,
+        discount = 30,
+        country = "USA",
+        martialStatus = "married";
+
+      if (country === "Egypt") {
+        if (martialStatus === "married") {
+          console.log((price -= 50));
+        } else {
+          console.log((price -= discount));
+        }
+      } else if (country === "KSA") {
+        console.log((price -= 10));
+      } else {
+        console.log(price);
+      }
+    </script>
+  </body>
+</html>

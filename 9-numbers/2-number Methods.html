@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>number Methods</title>
+  </head>
+  <body>
+    <script>
+      let number = 100;
+      console.log(number.toString()); //100 ---> string   convert number to string
+      console.log((100).toString());
+      console.log((100.4).toString()); //100.4 ---> string
+      console.log((100.55555).toFixed(2)); //100.56 ---> string
+      //convert number to string with number of decimal u determine in ()
+      console.log(+"100.5"); //100.5 ---> number but it can deal with (100.5hossam)
+      console.log(Number("100.5")); //100.5 ---> number but it can deal with (100.5hossam)
+      console.log(parseInt("100.5hossam")); //100 ----> number(int) it can deal with (100.5hossam)
+      console.log(parseInt("hossam100.5")); //NaN
+      console.log(parseFloat("100.5badr")); //100.5 ---> number(float)
+      console.log(Number.isInteger(100)); //true ES6
+      console.log(Number.isInteger(100.5)); //false
+      console.log(Number.isNaN("hossam")); //false ES6
+      console.log(Number.isNaN("hossam" / 100)); //true
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slice splice</title>
+  </head>
+  <body>
+    <script>
+        const arr = ["hey", "my", "friend", "it's", "me"],
+         arr2 = ["hey", "my", "friend", "it's", "me"];
+        console.log(arr.slice());
+        /*slice(start:index[opt], End:number[opt]) 
+        note 1:  if u don't define number it will start from 0-index till end of array so give u same array
+        note 2: array.slice() return array not affect original array*/
+        console.log(arr.slice(1, 3)); 
+        console.log(arr.slice(3, 6));
+        console.log(arr2.splice(1, 2, "our", "lovers"));
+        /*array.splice(start:index[required], number of deleted items, added strings)*/
+        console.log(arr2);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        ul {
+            list-style-type: none;
+            background-color: rgb(221, 213, 228);
+            padding: 10px;
+            width: 400px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        ul li:first-of-type {
+            background-color: red;
+            padding: 30px;
+        }
+        ul li:nth-of-type(2) {
+            background-color: green;
+            padding: 30px;
+        }
+        ul li:nth-of-type(3) {
+            background-color: blue;
+            padding: 30px;
+        }
+        ul li:last-of-type {
+            background-color: yellow;
+            padding: 30px;
+        }
+        ul li {
+            opacity: .3;
+        }
+        .active,
+        ul li:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+        div {
+            background-color: blueviolet;
+            width: 400px;
+            height:300px;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 40px;;
+        }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+      <ul>
+          <li data-color="red"></li></li>
+          <li data-color="green"></li></li>
+          <li data-color="blue"></li></li>
+          <li data-color="yellow"></li></li>
+      </ul>
+      <div class="screen"></div>
+    <script src="script2.js"></script>
+  </body>
+</html>

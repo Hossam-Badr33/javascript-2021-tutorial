@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rest parameters</title>
+  </head>
+  <body>
+    <script>
+      // // note-1: reset-parameter (...numbers) only used 1-time in prantethes. and it's array-type
+      // note-2: u if u want to add another parameter rather than numbers for example names reset-parameter must added in the last function(name, ...numbers)
+      function calcuAllnumbers(...numbers) {
+        let result = 0;
+        for (let num = 0; num < numbers.length; num++) {
+          result += numbers[num];
+        }
+        return `${result}`;
+      }
+      console.log(`${calcuAllnumbers(20, 30, 20)}`);
+    </script>
+  </body>
+</html>

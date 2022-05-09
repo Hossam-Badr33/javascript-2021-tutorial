@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>searching array</title>
+  </head>
+  <body>
+    <script>
+      let array = ["hossam", "Ahmed", "Ali", "Mostafa", "Ahmed"];
+      console.log(array.indexOf("Ahmed", -2)); //indexOf(string, number[optional])
+      console.log(array.lastIndexOf("Ahmed")); //lastIndexOf(string, number[optional])
+      console.log(array.includes("hossam")); //true or false includes(string, number [optional])
+      if (array.includes("Ali", 2) === -1) {
+        console.log("not found"); //means false(not founded)
+      } else {
+        console.log("founded"); //means true
+      }
+    </script>
+  </body>
+</html>

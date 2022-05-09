@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>variables comparison</title>
+  </head>
+  <body>
+    <script>
+      var x = 50,
+        x = 100; // u can re-declare (var)
+      let y = 50;
+      //let y = 100;      //u can not re-declare (let) just delete or comment old one
+      const z = 50;
+      //const z = 100;   //u can not re-declare (const) just delete or comment old on
+      console.log(x);
+      console.log(y);
+      console.log(z);
+      /*note 1 ---> u cann't assign any of var|let|const before declare them
+        note 2 ---> in window object (var-global-drama) apper but let & const have no-drama-affect
+      */
+    </script>
+  </body>
+</html>

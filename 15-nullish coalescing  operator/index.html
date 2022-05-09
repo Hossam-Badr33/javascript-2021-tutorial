@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = null,
+        name1,
+        name2 = "",
+        result = true;
+      console.log(number || 200); // to replace null with 200
+      console.log(name1 || "hossam"); // to replace undefined with "hossam"
+      console.log(name2 || "Badr"); // to replace empty-string with "Badr"
+      console.log(name1 ?? name1); // to show original value without replace
+
+      console.log("Boolean concepts: ");
+      console.log(Boolean("")); //false
+      console.log(Boolean(null)); //false
+      console.log(Boolean(0)); //false
+      console.log(Boolean(100)); //true
+      console.log(Boolean(-100)); //true
+
+      //name1 === undefined ? alert(undefined || "defined") : alert ("hey");
+    </script>
+  </body>
+</html>

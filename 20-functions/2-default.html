@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>default value</title>
+  </head>
+  <body>
+    <script>
+      function greeting(Name, Age) {
+        //easy way to set default is ECMA-6 -->function greeting(Name = "unknown", Age = "unknown")
+        if (Name === undefined) {
+          // this is 1st-old way
+          Name = "unknown";
+          let oldOrYoung = "";
+          if (Age < 30) {
+            oldOrYoung = "Young";
+            return `my dear ${Name} you are soo ${oldOrYoung} --> ${Age}`;
+          } else {
+            oldOrYoung = "Old";
+            return `my dear ${Name} you are soo ${oldOrYoung} --> ${Age}`;
+          }
+        } else {
+          let oldOrYoung = "";
+          if (Age < 30) {
+            oldOrYoung = "Young";
+            return `my dear ${Name} you are soo ${oldOrYoung} --> ${Age}`;
+          } else {
+            oldOrYoung = "Old";
+            return `my dear ${Name} you are soo ${oldOrYoung} --> ${Age}`;
+          }
+        }
+      }
+      console.log(greeting());
+      function sayYourAge(Age) {
+        Age = Age || "unknown"; //this is 2nd-old-way
+        return `my Age is ${Age}`;
+      }
+      console.log(sayYourAge());
+    </script>
+  </body>
+</html>

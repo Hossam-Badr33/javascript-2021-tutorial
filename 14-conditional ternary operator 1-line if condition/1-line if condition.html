@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1-line if condition</title>
+  </head>
+  <body>
+    <script>
+      let name = "hossam",
+        job = "programming-study",
+        salary = 10_000;
+      // if condition --> true ? result: else if codition --> true ? result : else --> result
+      name == "hossam"
+        ? console.log("professional")
+        : console.log("not profesional");
+      console.log(job === "programmer" ? "great job" : "normal job");
+      console.log(
+        job === "chemist"
+          ? "old-job"
+          : job === "programmer"
+          ? "great job"
+          : job === "nuclear-study"
+          ? "great-study"
+          : "not yet"
+      );
+    </script>
+  </body>
+</html>

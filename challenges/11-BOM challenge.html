@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form,
+      .tasks {
+        background-color: rgb(199, 121, 121);
+        width: 400px;
+        padding: 15px;
+        text-align: center;
+        margin: 30px auto;
+        border-radius: 10px;
+      }
+      form input:first-child {
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      form input:first-child:hover {
+        border: 2px solid #ff3;
+      }
+      .tasks {
+        width: 300px;
+        padding: 20px;
+        display: none;
+      }
+      .tasks button {
+        display: relative;
+        float: right;
+        margin-top: -7px;
+      }
+      .tasks p {
+        background-color: aliceblue;
+      }
+      div {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <input type="text" class="task-name" />
+        <input type="button" class="add" value="add-task" />
+      </form>
+      <div class="tasks" id="first">
+        <p></p>
+        <button>delete</button>
+      </div>
+    </div>
+    <script src="scripts/BOM challenge.js"></script>
+  </body>
+</html>
